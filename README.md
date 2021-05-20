@@ -22,7 +22,7 @@ $('.product-info').each(function(ix,el){
 console.table(table)
 ```
 
-##Calculo de boleta de honorarios
+## Calculo de boleta de honorarios
 ```
 function boleta(monto,retencion=11.5){
     return {
