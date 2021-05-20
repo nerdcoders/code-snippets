@@ -19,4 +19,5 @@ $('.product-info').each(function(ix,el){
     p.descuento=(isNaN(p.descuento)?0:p.descuento)
     table.push(p)
 })
-console.table(table)```
+console.table(table)
+```
