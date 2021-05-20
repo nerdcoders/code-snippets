@@ -21,3 +21,15 @@ $('.product-info').each(function(ix,el){
 })
 console.table(table)
 ```
+
+##Calculo de boleta de honorarios
+```
+function boleta(monto,retencion=11.5){
+    return {
+        valorRecibido:monto.toLocaleString('de-DE'),
+        valorBoleta:Math.ceil(monto*100/(100-retencion)).toLocaleString('de-DE'),
+        impuesto:retencion+'%',
+        retencion:Math.ceil(monto*100/(100-retencion)-monto).toLocaleString('de-DE')
+    }
+}
+```
